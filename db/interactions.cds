@@ -21,3 +21,4 @@ entity Interactions_Items {
 		LANGU	: String(2);
 		LOGTEXT	: LText;
 };
+//Prueba XYZ
