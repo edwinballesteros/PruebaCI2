@@ -13,8 +13,8 @@ build-parameters:
   before-all:
    - builder: custom
      commands:
-      - npm install --production
-      - npx -p @sap/cds-dk cds build --production
+      - npm install
+      - npx -p @sap/cds-dk cds build 
 
 modules:
  # --------------------- SERVER MODULE ------------------------
