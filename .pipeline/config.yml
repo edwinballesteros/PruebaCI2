@@ -5,12 +5,11 @@
 # The documentation for the most recent pipeline version can always be found at:
 general:
 
-  productiveBranch: 'master'
+  productiveBranch: 'main'
 
 # Stage configuration
 
 stages:
-
   productionDeployment:
     cfTargets:
       - org: 'b81a0ed9trial'
