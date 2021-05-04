@@ -10,13 +10,20 @@ general:
 # Stage configuration
 
 stages:
-  productionDeployment:
-    cfTargets:
-      - org: 'b81a0ed9trial'
-        space: 'dev'
-        apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
-        appName: 'CDSTest-srv'
-        credentialsId: Sofia2010
+ cloudFoundryDeploy:
+    deployTool: 'cf_native'
+    cloudFoundry:
+      org: 'b81a0ed9trial'
+      space: 'dev'
+      credentialsId: 'Sofia2010'
+      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+  #productionDeployment:
+  #  cfTargets:
+  #    - org: 'b81a0ed9trial'
+  #      space: 'dev'
+  #      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+  #      appName: 'CDSTest-srv'
+  #      credentialsId: Sofia2010
 #  Integration:
 #    credentials:
 #      - alias: 'mySystemAlias'
