@@ -8,7 +8,16 @@ general:
   productiveBranch: 'main'
 
 # Stage configuration
-
+steps:
+  mtaBuild:
+    buildTarget: 'CF'
+  cloudFoundryDeploy:
+    deployTool: 'cf_native'
+    cloudFoundry:
+      org: 'b81a0ed9trial'
+      space: 'dev'
+      credentialsId: 'Sofia2010'
+      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
 stages:
  cloudFoundryDeploy:
     deployTool: 'cf_native'
